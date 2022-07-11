@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+    repo-grinder:
+        image: repo-grinder
+        build:
+            context: ./
+            dockerfile: ./RepoGrinder/Dockerfile
+        ports:
+            - "8090:80"
